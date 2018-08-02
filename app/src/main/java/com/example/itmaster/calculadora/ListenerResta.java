@@ -1,5 +1,6 @@
 package com.example.itmaster.calculadora;
 
+import android.content.Intent;
 import android.view.View;
 
 public class ListenerResta implements View.OnClickListener
@@ -14,6 +15,10 @@ public class ListenerResta implements View.OnClickListener
     @Override
     public void onClick(View view)
     {
+        Intent resultado = new Intent(contextresta, Resultado.class);
+        Integer resta = Integer.valueOf(contextresta.getNumero1().getText().toString())-Integer.valueOf(contextresta.getNumero2().getText().toString());
+        resultado.putExtra("RESTA",resta);
 
+        contextresta.startActivity(resultado);
     }
 }
