@@ -39,17 +39,15 @@ public class MainActivity extends AppCompatActivity
         division = findViewById(R.id.division);
         multiplicacion = findViewById(R.id.multiplicacion);
 
-        listenerSuma = new ListenerSuma();
-        listenerResta = new ListenerResta();
-        listenerDivision = new ListenerDivision();
-        listenerMultiplicacion = new ListenerMultiplicacion();
+        listenerSuma = new ListenerSuma(this);
+        listenerResta = new ListenerResta(this);
+        listenerDivision = new ListenerDivision(this);
+        listenerMultiplicacion = new ListenerMultiplicacion(this);
 
         suma.setOnClickListener(listenerSuma);
         resta.setOnClickListener(listenerResta);
         division.setOnClickListener(listenerDivision);
         multiplicacion.setOnClickListener(listenerMultiplicacion);
-
-
 
     }
 
