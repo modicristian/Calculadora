@@ -33,22 +33,26 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="+"/>
+            android:text="+"
+            android:id="@+id/suma"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="-"/>
+            android:text="-"
+            android:id="@+id/resta"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="%"/>
+            android:text="%"
+            android:id="@+id/division"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="X"/>
+            android:text="X"
+            android:id="@+id/multiplicacion"/>
 
     </LinearLayout>
 
