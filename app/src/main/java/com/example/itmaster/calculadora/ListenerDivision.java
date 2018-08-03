@@ -17,7 +17,7 @@ public class ListenerDivision implements View.OnClickListener
     {
         Intent resultado = new Intent(contextdivision, Resultado.class);
         Integer division = Integer.valueOf(contextdivision.getNumero1().getText().toString())/Integer.valueOf(contextdivision.getNumero2().getText().toString());
-        resultado.putExtra("DIVISION",division);
+        resultado.putExtra("RESULTADO",division);
 
         contextdivision.startActivity(resultado);
 

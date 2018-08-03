@@ -17,7 +17,7 @@ public class ListenerMultiplicacion implements View.OnClickListener
     {
         Intent resultado = new Intent(contextmultiplicacion, Resultado.class);
         Integer multiplicacion = Integer.valueOf(contextmultiplicacion.getNumero1().getText().toString())*Integer.valueOf(contextmultiplicacion.getNumero2().getText().toString());
-        resultado.putExtra("MULTIPLICACION", multiplicacion);
+        resultado.putExtra("RESULTADO", multiplicacion);
 
         contextmultiplicacion.startActivity(resultado);
 

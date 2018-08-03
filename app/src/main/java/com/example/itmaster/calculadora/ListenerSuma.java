@@ -6,7 +6,7 @@ import android.view.View;
 public class ListenerSuma implements View.OnClickListener
 {
     private MainActivity contextsuma;
-    
+
     public ListenerSuma(MainActivity contextsuma)
     {
         this.contextsuma = contextsuma;
@@ -17,7 +17,7 @@ public class ListenerSuma implements View.OnClickListener
     {
         Intent resultado = new Intent(contextsuma, Resultado.class);
         Integer suma = Integer.valueOf(contextsuma.getNumero1().getText().toString()) + Integer.valueOf(contextsuma.getNumero2().getText().toString());
-        resultado.putExtra("SUMA",suma);
+        resultado.putExtra("RESULTADO",suma);
 
         contextsuma.startActivity(resultado);
     }
