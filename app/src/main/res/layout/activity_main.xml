@@ -12,14 +12,14 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INGRESE NUMERO 1"
+        android:hint="INGRESE NUMERO 1"
         android:id="@+id/numero1"
         android:layout_gravity="center"/>
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="INGRESE NUMERO 2"
+        android:hint="INGRESE NUMERO 2"
         android:layout_marginTop="25dp"
         android:id="@+id/numero2"
         android:layout_gravity="center"/>

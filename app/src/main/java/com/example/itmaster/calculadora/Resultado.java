@@ -19,7 +19,7 @@ public class Resultado extends AppCompatActivity
 
         resultado = findViewById(R.id.resultado);
 
-        String solucion = b.getString("RESULTADO");
+        String solucion = String.valueOf(b.getInt("RESULTADO"));
 
         resultado.setText(solucion);
 
