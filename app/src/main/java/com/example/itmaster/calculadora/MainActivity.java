@@ -50,5 +50,12 @@ public class MainActivity extends AppCompatActivity
         multiplicacion.setOnClickListener(listenerMultiplicacion);
 
     }
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
+        numero1.setText("");
+        numero2.setText("");
+    }
 
 }

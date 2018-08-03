@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="INGRESE NUMERO 1"
+        android:inputType="number"
         android:id="@+id/numero1"
         android:layout_gravity="center"/>
 
@@ -20,6 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="INGRESE NUMERO 2"
+        android:inputType="number"
         android:layout_marginTop="25dp"
         android:id="@+id/numero2"
         android:layout_gravity="center"/>
